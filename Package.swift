@@ -1,4 +1,4 @@
-// swift-tools-version:5.7
+// swift-tools-version:5.9
 
 //
 // Copyright Amazon.com Inc. or its affiliates.
@@ -30,7 +30,8 @@ let package = Package(
         .macOS(.v10_15),
         .iOS(.v13),
         .tvOS(.v13),
-        .watchOS(.v6)
+        .watchOS(.v6),
+        .visionOS(.v1)
     ],
     products: [
         .library(name: "AWSClientRuntime", targets: ["AWSClientRuntime"])
